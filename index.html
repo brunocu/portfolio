@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bruno Campos</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar fixed-top navbar-expand-md navbar-light"
+      style="background-color: #cde6f5;"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/kirbo.webp" alt="B" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#perfil">Perfil</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Proyectos</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="pages/stereo.html"
+                    >Stereo mapping</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/arc.html"
+                    >Neural Networks</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pages/vis.html"
+                    >Data Visualization</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#proyectos">Proyectos</a>
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- BANNER -->
+    <div id="banner" class="container-fluid parallax">
+      <div class="row">
+        <div class="col-lg-6 p-2">
+          <h1>Bruno Campos Uribe</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 p-2">
+          <p>Tecnologías de la Información</p>
+        </div>
+      </div>
+    </div>
+    <!-- PERFIL -->
+    <div id="perfil" class="container-fluid">
+      <div class="row">
+        <div class="col mb-3 mt-2">
+          <h1>Perfil</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Semblanza</h2>
+          <p class="light-text">
+            Estudiante de Ingeniería en Sistemas y Tecnologías de Información en
+            la Universidad Panamericana, Quinto semestre
+          </p>
+          <p class="light-text">
+            Soy una persona altamente autodidacta. Me gustaponerme retos para
+            mejorarmis habilidades. Me considero responsable,enfocado, de
+            actitudtranquila y respetuoso de los demás. Entusiasta del cine y
+            las artes.
+          </p>
+          <h2>Habilidades</h2>
+          <ul class="light-text">
+            <li>Dominio del inglés con certificación C2 marco europeo.</li>
+            <li>Conocimiento principiante del francés.</li>
+            <li>Hábil en programación. Conocimiento amplio de Python y C++.</li>
+            <li>
+              Usuario de Linux para uso personal cotidiano, y nivel sysadmin
+              para proyectos personales.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <h2>Experiencia</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button d-block"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h5>
+                    Departamento de Redes y Telefonía, Universidad Panamericana
+                  </h5>
+                  <h6 class="text-muted">Enero 2020 - a la fecha</h6>
+                </button>
+              </h3>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Becario en el departamento de Tecnologías de la
+                      Información de la Universidad Panamericana en el área de
+                      Redes y Telefonía.
+                    </li>
+                    <li>
+                      Configuración y mantenimiento de red de datos y
+                      telecomunicaciones de la universidad.
+                      <ul>
+                        <li>
+                          Atención de reportes respecto del servicio de teléfono
+                          y nodos de red a través de sistema intertel.
+                        </li>
+                        <li>
+                          Monitoreo de IDFs y mantenimiento a equipos de red
+                          CISCO.
+                        </li>
+                        <li>
+                          Mantenimiento de la red de telefonía basada en Avaya.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Desarrollo de manuales de usuario pertinentes al uso de la
+                      red UP para el personal de la universidad y estudiantes.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button d-block collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <h5>Data Science Club</h5>
+                  <h6 class="text-muted">2019-2020</h6>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Líder del equipo de Ciencia de Datos de Grupo Panteras en
+                      la Universidad Panamericana en el periodo primavera 2020.
+                      <ul>
+                        <li>Organización del equipo.</li>
+                        <li>Capacitación de nuevos miembros.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Visualización y análisis de datos con Python.
+                      <ul>
+                        <li>
+                          Experiencia con librerías de análisis de datos como
+                          <code>pandas</code> y <code>scikit-learn</code>.
+                        </li>
+                        <li>
+                          Uso de librerías gráficas como
+                          <code>matplot-lib</code> y <code>seaborn</code>.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Aprendizaje de máquina con eonfoque en aprendizaje
+                      supervisado y análisis de imágenes.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PROYECTOS -->
+    <div id="proyectos" class="container-fluid">
+      <div class="row">
+        <div class="col mb-3 mt-2">
+          <h1>Proyectos</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="img/depthMap.png" class="img-fluid rounded-start" />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h3 class="card-title">Stereoscopic Depth Mapping</h3>
+                  <p class="card-text">
+                    Generación de información de profundidad a partir de pares
+                    de imágenes estereoscópicas
+                  </p>
+                  <a href="pages/stereo.html" class="card-link">más...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="card mb-3">
+            <img src="img/training.png" class="card-img-top" />
+            <div class="card-body">
+              <h3 class="card-title">Neural Networks</h3>
+              <p class="card-text">
+                Aprendizaje supervisado con redes neuronales sobre la librería
+                <a href="https://keras.io/" target="_blank">Keras</a>.
+              </p>
+              <a href="pages/arc.html" class="card-link">más...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="card mb-3">
+            <img src="img/vis/titanic.png" class="card-img-top" />
+            <div class="card-body">
+              <h3 class="card-title">Data Visualization</h3>
+              <p class="card-text">
+                Visualización gráfica de datos con Python.
+              </p>
+              <a href="pages/vis.html" class="card-link">más...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Copyright &copy; 2021 Bruno Campos
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap");
+
+body {
+  /* https://stackoverflow.com/q/10336194 */
+  padding-top: 75px;
+  background-image: url("../img/background.jpg");
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #f85d6c;
+}
+
+h1 {
+  display: inline;
+  background-color: #c4fdd0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#banner {
+  background-image: url("../img/sheep.jpg");
+  min-height: 70vh;
+}
+
+#banner .row {
+  position: relative;
+  top: 200px;
+  text-align: right;
+}
+
+#banner h1 {
+  padding: 15px 30px;
+  line-height: 60px;
+}
+
+#banner p {
+  display: inline;
+  color: #623f9a;
+  background-color: #c4fdd0;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner ~ .container-fluid {
+  background-color: #623f9a;
+}
+
+.light-text {
+  color: #cde6f5;
+}
+
+#proyectos .card {
+  background-color: #cde6f5;
+}
+
+.links {
+  display: block;
+  text-align: center;
+  background-color: rgba(98, 63, 154, 0.7);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  color: #cde6f5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f85d6c;
+}
+
+.footer {
+  background-color: #623f9a;
+  color: #cde6f5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.projects > .row:nth-child(odd) {
+  background-color: #623f9a;
+  color: #cde6f5;
+}
+
+.projects > .row:nth-child(even) {
+  background-color: #cde6f5;
+}
+
+#vis img {
+  height: 400px;
+}
+
+.macintosh {
+  background-image: url("../img/background.jpg");
+}

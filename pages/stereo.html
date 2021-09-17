@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Bruno | Stereo mapping</title>
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar fixed-top navbar-expand-md navbar-light"
+      style="background-color: #cde6f5;"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/kirbo.webp" alt="B" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../index.html#perfil">Perfil</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Proyectos</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item active" aria-current="page" href="#"
+                    >Stereo mapping</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="arc.html">Neural Networks</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="vis.html"
+                    >Data Visualization</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="../index.html#proyectos"
+                    >Proyectos</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="stereo" class="container projects">
+      <div class="row gx-5">
+        <div class="col-4">
+          <img src="../img/depthMap.png" class="img-fluid p-3" />
+        </div>
+        <div class="col-8 align-self-center">
+          <h2>Stereoscopic Depth Mapping</h2>
+          <p>
+            Generación de información de profundidad a partir de pares de
+            imágenes estereoscópicas.
+          </p>
+          <p>
+            Implementación basada en el algoritmo propuesto por
+            <a href="https://arxiv.org/abs/1902.03471" target="_blank"
+              >Asra Aslam y Mohd. Samar Ansari, 2019</a
+            >.
+          </p>
+        </div>
+      </div>
+      <div class="row gx-5 mb-5">
+        <div class="col-8 align-self-center">
+          <p>
+            El algoritmo propuesto realiza una coincidencia píxel a píxel de las
+            dos imágenes del par estéreo para la estimación de la profundidad.
+          </p>
+          <p>
+            El criterio de emparejamiento se basa en la suma de las diferencias
+            absolutas (SAD). Se calcula para los tres canales de de color y los
+            tres valores de diferencia absoluta resultantes se suman. Si este
+            valor es inferior o igual a la tolerancia, entonces sólo se
+            considera el píxel correspondiente de la imagen derecha como el
+            píxel correspondiente de la imagen izquierda.
+          </p>
+        </div>
+        <div class="col-4 align-self-center">
+          <img src="../img/disparity.png" class="img-fluid p-3" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Copyright &copy; 2021 Bruno Campos
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
